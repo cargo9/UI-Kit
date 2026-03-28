@@ -6,6 +6,10 @@ import DropdownMenu from "./components/DropdownMenu.jsx";
 import ColorPicker from "./components/ColorPicker.jsx";
 import ModalCard from "./components/ModalCard.jsx";
 import PasswordToggler from "./components/PasswordToggler.jsx";
+import AvatarBadge from "./components/AvatarBadge.jsx";
+import BackToTop from "./components/BackToTop.jsx";
+import BreadcrumbsNav from "./components/BreadcrumbsNav.jsx";
+import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
 
 // Загальна обгортка сторінки
 const Page = styled.main`
@@ -87,9 +91,24 @@ class App extends React.Component {
           <Grid>
             <ModalCard />
           </Grid>
-          <Grid>
-            <PasswordToggler />
-          </Grid>
+              <Grid>
+                <PasswordToggler />
+              </Grid>
+              <Grid>
+                <AvatarBadge name="John Doe" />
+              </Grid>
+                <Grid>
+                  <BackToTop />
+                </Grid>
+                    <Grid>
+                      <BreadcrumbsNav />
+                    </Grid>
+                    <Grid>
+                      <LanguageSwitcher />
+                    </Grid>
+                    
+
+
         </Section>
       </Page>
     );

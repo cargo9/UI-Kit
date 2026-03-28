@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import  Accordion  from "./components/Accordion.jsx";
 import TabSwitch from "./components/TabSwitch.jsx";
+import DropdownMenu from "./components/DropdownMenu.jsx";
+import ColorPicker from "./components/ColorPicker.jsx";
+import ModalCard from "./components/ModalCard.jsx";
+import PasswordToggler from "./components/PasswordToggler.jsx";
 
 // Загальна обгортка сторінки
 const Page = styled.main`
@@ -35,6 +39,8 @@ const Grid = styled.section`
   width: 30vw;
   /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
 `;
+
+
 
 // Комірка сітки для одного UI-елемента
 const Cell = styled.div`
@@ -71,6 +77,18 @@ class App extends React.Component {
           </Grid>
           <Grid>
             <TabSwitch />
+          </Grid>
+          <Grid>
+            <DropdownMenu />
+          </Grid>
+          <Grid>
+            <ColorPicker />
+          </Grid>
+          <Grid>
+            <ModalCard />
+          </Grid>
+          <Grid>
+            <PasswordToggler />
           </Grid>
         </Section>
       </Page>
